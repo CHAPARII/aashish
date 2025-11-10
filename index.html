@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aashish — Personal Hub</title>
+  <meta name="theme-color" content="#111827" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cursor"></div>
+  <canvas id="fx"></canvas>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home">
+        <img src="assets/avatar.jpg" alt="Aashish" />
+        <span>Aashish<span style="opacity:.6">.hub</span></span>
+      </a>
+      <div class="nav-links">
+        <a class="btn" href="#work">Work</a>
+        <a class="btn" href="#folders">Folders</a>
+        <a class="btn" href="#socials">Socials</a>
+        <button class="btn" id="loginBtn" type="button">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero container">
+    <div style="display:flex; justify-content:center;">
+      <div style="position:relative;">
+        <img src="assets/avatar.jpg" width="120" height="120" style="border-radius:28px; box-shadow:0 0 0 4px var(--ring);" alt="Aashish" />
+        <div class="badge" style="position:absolute; right:-8px; bottom:-8px;">available</div>
+      </div>
+    </div>
+    <h1 class="title reveal">Hey, I'm Aashish 👋</h1>
+    <p class="subtitle reveal" style="transition-delay:.1s">
+      I build modern, interactive UIs and fun digital experiences.
+      I made this website to access my regular data stuff like <b>work</b>, <b>folders</b>, and <b>social links</b>. Through this website I can now access these dat from any where in the world, whenever i needed! ;D
+    </p>
+    <div class="chip-row reveal">
+      <div class="chip magnet">Frontend • UX • Roblox</div>
+      <div class="chip magnet">Three.js • Animations</div>
+      <div class="chip magnet">Open Source</div>
+    </div>
+    <div class="cta-row reveal">
+      <a class="cta magnet" href="#work">View Work</a>
+      <a class="cta magnet" href="#folders">Folders</a>
+      <a class="cta magnet" href="#socials">Socials</a>
+    </div>
+  </header>
+
+  <section id="work" class="container spotlight">
+    <h2 class="section-title">Featured Work</h2>
+    <div class="grid">
+      <a class="card magnet" href="work-glassy.html">
+        <div class="card-inner">
+          <div class="icon">💎</div>
+          <div>
+            <h3>Glassy UI Kit</h3>
+            <p>Frosted glass components with sleek animations.</p>
+          </div>
+        </div>
+      </a>
+      <a class="card magnet" href="work-roblox.html">
+        <div class="card-inner">
+          <div class="icon">🕹️</div>
+          <div>
+            <h3>Roblox Arena System</h3>
+            <p>Teleport + Combat scripting system for Roblox.</p>
+          </div>
+        </div>
+      </a>
+      <a class="card magnet" href="work-motion.html">
+        <div class="card-inner">
+          <div class="icon">🪄</div>
+          <div>
+            <h3>Motion Presets</h3>
+            <p>Reusable GSAP/WAAPI animation presets.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="folders" class="container spotlight">
+    <h2 class="section-title">Important Folders</h2>
+    <div class="grid">
+      <a class="card magnet" href="folder-school.html">
+        <div class="card-inner">
+          <div class="icon">📁</div>
+          <div>
+            <h3>📘 School Docs</h3>
+            <p>Assignments, references, and projects.</p>
+          </div>
+        </div>
+      </a>
+      <a class="card magnet" href="folder-assets.html">
+        <div class="card-inner">
+          <div class="icon">📦</div>
+          <div>
+            <h3>📦 Assets Pack</h3>
+            <p>Icons, logos, and design elements.</p>
+          </div>
+        </div>
+      </a>
+      <a class="card magnet" href="folder-archives.html">
+        <div class="card-inner">
+          <div class="icon">🗄️</div>
+          <div>
+            <h3>🗄️ Archives</h3>
+            <p>Older builds and project backups.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="socials" class="container spotlight">
+    <h2 class="section-title">Connect With Me</h2>
+    <div class="socials grid">
+      <!-- Replace the href values with your real links -->
+      <a class="card magnet" href="https://discord.gg/RmTWR5HvQM" target="_blank" rel="noopener">
+        <div class="card-inner">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369A19.791 19.791 0 0 0 15.9 3c-.2.35-.43.82-.59 1.19a18.27 18.27 0 0 0-5.62 0C9.43 3.82 9.2 3.35 9 3a19.72 19.72 0 0 0-4.417 1.369C2.18 8.148 1.53 11.84 1.82 15.488A19.9 19.9 0 0 0 7.14 18c.35-.48.66-1 .92-1.55-1.02-.38-1.94-.94-2.77-1.62.58.43 1.24.79 1.94 1.08.86.36 1.8.62 2.77.74a12.2 12.2 0 0 0 4.02 0 9.8 9.8 0 0 0 2.77-.74c.7-.29 1.36-.65 1.94-1.08-.83.68-1.75 1.24-2.77 1.62.26.55.57 1.07.92 1.55a19.85 19.85 0 0 0 5.32-2.51c.36-4.33-.51-8.01-2.39-11.12ZM9.68 14.13c-.9 0-1.64-.83-1.64-1.86 0-1.02.73-1.85 1.64-1.85.9 0 1.64.83 1.64 1.85 0 1.03-.73 1.86-1.64 1.86Zm4.66 0c-.9 0-1.64-.83-1.64-1.86 0-1.02.73-1.85 1.64-1.85.9 0 1.64.83 1.64 1.85 0 1.03-.73 1.86-1.64 1.86Z"/></svg>
+          </div>
+          <div>
+            <h3>Discord</h3>
+            <p>💬</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card magnet" href="https://instagram.com/chotegaandkabadalenda" target="_blank" rel="noopener">
+        <div class="card-inner">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm6.5-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+          </div>
+          <div>
+            <h3>Instagram</h3>
+            <p>🎀</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card magnet" href="https://www.roblox.com/users/3791631894/profile" target="_blank" rel="noopener">
+        <div class="card-inner">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 7.5 16.5 3 21 16.5 7.5 21 3 7.5Zm9.2 1.6a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8Z"/></svg>
+          </div>
+          <div>
+            <h3>Roblox</h3>
+            <p>🎮</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card magnet" href="mailto:fuckyou@gmail.com" target="_blank" rel="noopener">
+        <div class="card-inner">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18a2 2 0 0 1 2 2v.3l-11 6.6L1 7.3V7a2 2 0 0 1 2-2Zm19 5.1V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6.9l10 6 10-6Z"/></svg>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p>📧</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      Built with ❤️ by Aashish • <a class="link" href="#" id="copy-link">Copy profile link</a>
+    </div>
+  </footer>
+
+  <audio id="bgm" preload="auto" loop autoplay playsinline muted>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="float-ui">
+    <button class="fab" id="musicBtn">▶️</button>
+    <div class="tooltip" id="musicTip">music off</div>
+    <button class="fab" id="themeBtn">🌓</button>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Login</h3>
+        <button class="modal-close" id="loginClose" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <label class="field">
+          <span>Username</span>
+          <input id="authUser" type="text" placeholder="username" autocomplete="username" />
+        </label>
+        <label class="field">
+          <span>Password</span>
+          <input id="authPass" type="password" placeholder="password" autocomplete="current-password" />
+        </label>
+        <div class="modal-actions">
+          <button id="authSubmit" class="btn primary" type="button">Sign in</button>
+        </div>
+        <div id="authError" class="auth-error" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

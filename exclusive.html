@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exclusive — Aashish</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="exclusive">
+  <div id="cursor"></div>
+  <canvas id="fx"></canvas>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html#home">
+        <img src="assets/avatar.jpg" alt="Aashish" />
+        <span>Aashish<span style="opacity:.6">.hub</span></span>
+      </a>
+      <div class="nav-links">
+        <a class="btn" href="index.html#work">Work</a>
+        <a class="btn" href="index.html#folders">Folders</a>
+        <a class="btn" href="index.html#socials">Socials</a>
+        <button class="btn" id="loginBtn" type="button">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <h1 class="title">Exclusive Area</h1>
+    <p class="subtitle">Log in to view private stuff. Refresh or leaving this page requires a new login.</p>
+    <div class="cta-row">
+      <a class="cta" href="index.html" id="backHome">← Back to Home</a>
+    </div>
+  </header>
+
+  <section class="container spotlight exclusive-gated">
+    <h2 class="section-title">Private Content</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-inner">
+          <div class="icon">🔐</div>
+          <div>
+            <h3>Private Assets</h3>
+            <p>Put links/files that only you should see here.</p>
+          </div>
+        </div>
+      </div>
+      <a class="card" href="folder-archives.html">
+        <div class="card-inner">
+          <div class="icon">📁</div>
+          <div>
+            <h3>Hidden Folder</h3>
+            <p>Shortcut to a private subpage.</p>
+          </div>
+        </div>
+      </a>
+      <div class="card">
+        <div class="card-inner">
+          <div class="icon">📝</div>
+          <div>
+            <h3>Personal Notes</h3>
+            <p>Add your notes or credentials here (locally).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row" style="margin-top:22px;">
+      <button class="cta" id="goBack">← Back</button>
+    </div>
+  </section>
+
+  <audio id="bgm" preload="auto" loop autoplay playsinline muted>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="float-ui">
+    <button class="fab" id="musicBtn">▶️</button>
+    <div class="tooltip" id="musicTip">music off</div>
+    <button class="fab" id="themeBtn">🌓</button>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Login</h3>
+        <button class="modal-close" id="loginClose" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <label class="field">
+          <span>Username</span>
+          <input id="authUser" type="text" placeholder="username" autocomplete="username" />
+        </label>
+        <label class="field">
+          <span>Password</span>
+          <input id="authPass" type="password" placeholder="password" autocomplete="current-password" />
+        </label>
+        <div class="modal-actions">
+          <button id="authSubmit" class="btn primary" type="button">Sign in</button>
+        </div>
+        <div id="authError" class="auth-error" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
